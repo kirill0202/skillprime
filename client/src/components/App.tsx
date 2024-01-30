@@ -1,8 +1,17 @@
 import React from "react";
-import "./App.module.scss";
+import styles from "./App.module.scss";
+import Header from "common/Header";
+import MainInfo from "pages/main-info";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Header />
+      <div className={styles.container}>
+        <MainInfo />
+      </div>
+    </>
+  );
 }
 
 export default App;
