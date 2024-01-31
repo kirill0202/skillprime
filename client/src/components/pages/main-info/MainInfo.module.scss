@@ -1,0 +1,44 @@
+@import "styles/global.scss";
+@import "styles/mixins.scss";
+
+.infoBlock {
+  margin-top: 78px;
+  @include displayFlexSpaceBetween();
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px 50px;
+}
+
+.heading {
+  font-size: 85px;
+  text-align: start;
+  color: $color-white;
+  position: relative;
+}
+
+.work::after {
+  content: " ";
+  background-image: url("../../../assets/icons/stroke-panel.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 60px;
+  left: -12px;
+  height: 100%;
+  width: 100%;
+}
+
+.it {
+  position: relative;
+}
+
+.arrowRight {
+  position: absolute;
+  bottom: 25px;
+  left: 100px;
+}
+
+.desc {
+  width: 50%;
+  font-size: 22px;
+  color: $color-white;
+}

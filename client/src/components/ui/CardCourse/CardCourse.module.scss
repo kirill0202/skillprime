@@ -1,0 +1,21 @@
+@import "styles/global.scss";
+@import "styles/mixins.scss";
+
+.course {
+  width: 670px;
+  height: 360px;
+  @include displayFlexSpaceBetween();
+  flex-direction: column;
+  background: $color-primary;
+  border-radius: 20px;
+  padding: 40px;
+  cursor: pointer;
+  &Icon {
+    justify-content: flex-start !important;
+  }
+}
+
+.name {
+  font-size: 54px;
+  text-align: end;
+}

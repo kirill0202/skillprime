@@ -1,0 +1,14 @@
+@import "styles/global.scss";
+
+.courses {
+  margin-top: 250px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.desc {
+  font-size: 22px;
+  color: $color-white;
+  margin-top: 50px;
+}
