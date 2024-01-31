@@ -3,6 +3,9 @@ import styles from "./MainInfo.module.scss";
 import Heading from "./Heading";
 import Сourses from "./Сourses";
 import Icon from "ui/Icon";
+import Marquee from "ui/Marquee";
+import { contentInfo } from "constants/index";
+import AdvantageCourses from "./AdvantageCourses";
 
 const MainInfo = () => {
   console.log(
@@ -27,6 +30,12 @@ const MainInfo = () => {
         </p>
       </div>
       <Сourses />
+      <div className={styles.marquee}>
+        <Marquee content={contentInfo} />
+      </div>
+      <div className={styles.advantageCourses}>
+        <AdvantageCourses />
+      </div>
     </>
   );
 };

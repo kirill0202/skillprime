@@ -1,0 +1,12 @@
+@import "styles/global.scss";
+
+.warqueeBlock {
+  border: 1px solid $color-secondary;
+  border-radius: 24px;
+}
+
+.marqueeContent {
+  font-size: 30px;
+  color: $color-secondary;
+  padding: 0 20px;
+}

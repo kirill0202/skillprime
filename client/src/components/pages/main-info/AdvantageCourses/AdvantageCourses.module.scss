@@ -1,0 +1,29 @@
+@import "styles/global.scss";
+
+.advantages {
+  margin-top: 50px;
+}
+
+.advantageContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 150px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.advantageContentDesc {
+  max-width: 670px;
+  font-size: 30px;
+  color: $color-white;
+}
+
+.advantageText {
+  font-size: 60px;
+  color: $color-white;
+}
+
+.prime {
+  color: $color-primary;
+}

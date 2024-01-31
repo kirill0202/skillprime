@@ -2,7 +2,7 @@
 @import "styles/mixins.scss";
 
 .course {
-  width: 670px;
+  max-width: 100%;
   height: 360px;
   @include displayFlexSpaceBetween();
   flex-direction: column;

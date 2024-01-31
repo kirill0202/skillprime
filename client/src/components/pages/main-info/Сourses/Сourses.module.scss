@@ -12,3 +12,13 @@
   color: $color-white;
   margin-top: 50px;
 }
+
+@media (max-width: 1391px) {
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .desc {
+    text-align: center;
+  }
+}

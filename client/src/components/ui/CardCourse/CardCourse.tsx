@@ -13,16 +13,16 @@ type CardCourseProps = {
 const CardCourse = ({ name, iconName, backgroundColor }: CardCourseProps) => {
   return (
     <Tilt
+      className={styles.course}
+      style={{ background: backgroundColor }}
       tiltMaxAngleX={25}
       tiltMaxAngleY={25}
       perspective={900}
       scale={1.1}
       transitionSpeed={2000}
     >
-      <div className={styles.course} style={{ background: backgroundColor }}>
-        <Icon name={iconName} wrapperClassName={styles.courseIcon} />
-        <p className={styles.name}>{name}</p>
-      </div>
+      <Icon name={iconName} wrapperClassName={styles.courseIcon} />
+      <p className={styles.name}>{name}</p>
     </Tilt>
   );
 };

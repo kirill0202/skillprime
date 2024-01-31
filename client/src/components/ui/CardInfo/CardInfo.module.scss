@@ -1,0 +1,46 @@
+@import "styles/global.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 100px;
+  height: 100%;
+  position: relative;
+}
+
+.cardInfo {
+  min-height: 250px;
+  background-color: $color-white;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.cardInfo:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.blockName {
+  max-width: 520px;
+}
+
+.blockDec {
+  max-width: 650px;
+  z-index: 2;
+}
+
+.blockName {
+  font-size: 50px;
+  z-index: 2;
+}
+
+.blockDec {
+  font-size: 22px;
+}
+
+.icon {
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+}

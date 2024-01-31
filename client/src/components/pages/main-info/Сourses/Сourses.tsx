@@ -9,9 +9,9 @@ const Сourses = () => {
       <div className={styles.courseItem}>
         <TagInfo title="Курсы" numberTag={1} />
         <p className={styles.desc}>
-          Goose Group is a group of designers & technologists on a mission to
-          make Corporate and Startups more capable through state of the art
-          digital solutions.
+          Интерактивные и увлекательные курсы, привлекательные интерфейсы и
+          впечатляющие достижения - это все для достижения удовольствия в
+          процессе обучения.
         </p>
       </div>
       <CardCourse name="Frontend" iconName="development" />

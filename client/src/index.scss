@@ -28,3 +28,7 @@ body {
   font-family: "carbonara", sans-serif;
   background-color: $color-main;
 }
+
+::selection {
+  background: $color-primary; /* Safari */
+}
