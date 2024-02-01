@@ -1,6 +1,10 @@
 @import "styles/global.scss";
 @import "styles/mixins.scss";
 
+.wrapper {
+  margin-top: 72px;
+}
+
 .infoBlock {
   margin-top: 78px;
   @include displayFlexSpaceBetween();
@@ -31,10 +35,14 @@
   position: relative;
 }
 
+.wrapperBlock {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
 .arrowRight {
-  position: absolute;
-  bottom: 25px;
-  left: 100px;
+  margin-bottom: 25px;
 }
 
 .desc {
@@ -49,4 +57,38 @@
 
 .advantageCourses {
   margin-top: 130px;
+}
+
+@media (max-width: 1331px) {
+  .arrowRight {
+    display: none;
+  }
+  .infoBlock {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading {
+    text-align: center;
+  }
+  .desc {
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .heading {
+    font-size: 60px;
+  }
+  .work::after {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading {
+    font-size: 40px;
+  }
 }

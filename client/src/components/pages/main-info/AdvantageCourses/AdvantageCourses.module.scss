@@ -27,3 +27,38 @@
 .prime {
   color: $color-primary;
 }
+
+.advantageWrapper > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1396px) {
+  .advantageWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 10px;
+  }
+  .advantageWrapper > div:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .advantageWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .advantageWrapper > div:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1144px) {
+  .advantageContent {
+    justify-content: center;
+  }
+
+  .advantageContentDesc {
+    text-align: center;
+  }
+}

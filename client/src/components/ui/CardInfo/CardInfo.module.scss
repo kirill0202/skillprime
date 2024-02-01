@@ -8,39 +8,68 @@
   gap: 10px 100px;
   height: 100%;
   position: relative;
+  max-width: 100%;
 }
 
 .cardInfo {
-  min-height: 250px;
+  min-height: 200px;
   background-color: $color-white;
   border-radius: 20px;
   padding: 40px;
 }
 
-.cardInfo:not(:last-child) {
-  margin-bottom: 10px;
+.blockDec {
+  max-width: 650px;
+  z-index: 2;
+  font-size: 27px;
 }
 
 .blockName {
   max-width: 520px;
-}
-
-.blockDec {
-  max-width: 650px;
-  z-index: 2;
-}
-
-.blockName {
   font-size: 50px;
   z-index: 2;
-}
-
-.blockDec {
-  font-size: 22px;
 }
 
 .icon {
   position: absolute;
   z-index: -1;
   top: -30px;
+}
+
+@media (max-width: 740px) {
+  .blockName {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .blockDec {
+    font-size: 18px;
+  }
+
+  .icon > svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon {
+    top: 0;
+  }
+
+  .cardInfo {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .blockDec {
+    font-size: 15px;
+  }
+
+  .blockName {
+    font-size: 25px;
+  }
+  .icon {
+    left: 0 !important;
+  }
 }

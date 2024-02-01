@@ -6,7 +6,7 @@
   @include displayFlexSpaceBetween();
   align-items: center;
   padding: 0 40px;
-  margin-bottom: 72px;
+  gap: 50px;
 }
 
 .lists {
@@ -19,4 +19,21 @@
 
 .list {
   cursor: pointer;
+}
+
+.list:hover {
+  color: $color-primary;
+}
+
+.customMenu {
+  display: none !important;
+}
+
+@media (max-width: 530px) {
+  .lists {
+    display: none;
+  }
+  .customMenu {
+    display: flex !important;
+  }
 }

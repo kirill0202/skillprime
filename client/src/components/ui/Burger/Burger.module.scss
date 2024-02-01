@@ -1,0 +1,30 @@
+@import "styles/global.scss";
+@import "styles/mixins.scss";
+
+.burgerItems {
+  @include displayFlexDirectionColumn();
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burgerItem {
+  height: 2px;
+  background: $color-white;
+  width: 20px;
+  position: relative;
+  transition: 0.2s ease-out;
+}
+
+.close > div:first-child {
+  transform: rotate(45deg);
+  top: 3px;
+}
+
+.close > div:nth-child(2) {
+  transform: rotate(-45deg);
+  top: -4px;
+}
+
+.close > div:last-child {
+  display: none;
+}

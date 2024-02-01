@@ -19,3 +19,16 @@
   font-size: 54px;
   text-align: end;
 }
+
+@media (max-width: 450px) {
+  .course {
+    height: 250px;
+    &Icon > svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .name {
+    font-size: 25px;
+  }
+}

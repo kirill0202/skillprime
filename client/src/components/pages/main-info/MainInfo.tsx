@@ -14,16 +14,17 @@ const MainInfo = () => {
     "color: #f8bc5c; -webkit-text-stroke: 2px black; font-size: 30px; font-weight: bold;"
   );
   return (
-    <>
+    <div className={styles.wrapper}>
       <Heading />
       <div className={styles.infoBlock}>
-        <h2 className={styles.heading}>
-          Научитесь
-          <br /> <span className={styles.work}>работать</span> в{" "}
-          <span className={styles.it}>
-            IT <Icon name="arrowright" className={styles.arrowRight} />
-          </span>
-        </h2>
+        <div className={styles.wrapperBlock}>
+          <h2 className={styles.heading}>
+            Научитесь
+            <br /> <span className={styles.work}>работать</span> в{" "}
+            <span className={styles.it}>IT</span>
+          </h2>
+          <Icon name="arrowright" className={styles.arrowRight} />
+        </div>
         <p className={styles.desc}>
           Разработка веб-интерфейсов, программируйте и улучшайте IT-навыки.
           Поднимитесь на новые высоты, начав карьеру в сфере IT.
@@ -36,7 +37,7 @@ const MainInfo = () => {
       <div className={styles.advantageCourses}>
         <AdvantageCourses />
       </div>
-    </>
+    </div>
   );
 };
 

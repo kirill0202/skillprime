@@ -8,12 +8,18 @@
 }
 
 .desc {
-  font-size: 22px;
+  font-size: 25px;
   color: $color-white;
   margin-top: 50px;
 }
 
-@media (max-width: 1391px) {
+@media (max-width: 1331px) {
+  .courses {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 881px) {
   .courses {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;

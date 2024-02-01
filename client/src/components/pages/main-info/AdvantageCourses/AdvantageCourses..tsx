@@ -20,9 +20,11 @@ const AdvantageCourses = () => {
           production and deployment.
         </p>
       </div>
-      {cardIndos.map((item) => (
-        <CardInfo {...item} key={item.id} />
-      ))}
+      <div className={styles.advantageWrapper}>
+        {cardIndos.map((item) => (
+          <CardInfo {...item} key={item.id} />
+        ))}
+      </div>
     </>
   );
 };
