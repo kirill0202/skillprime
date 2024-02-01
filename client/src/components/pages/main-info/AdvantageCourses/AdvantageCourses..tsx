@@ -13,11 +13,10 @@ const AdvantageCourses = () => {
           Skill<span className={styles.prime}>Prime</span>
         </p>
         <p className={styles.advantageContentDesc}>
-          Goose Group is more than just an agency: we are a collective of
-          designers and technologists united by a joint mission: to enhance the
-          efficiency of corporations and startups through modern digital
-          solutions, working alongside you from strategy development to
-          production and deployment.
+          это уникальное образовательное учреждение, предлагающее курс обучения,
+          который позволит вам освоить все необходимые навыки для успешной
+          карьеры в сфере разработки программного обеспечения. Наш курс включает
+          в себя обучение основам программирования, разработке веб-приложений.
         </p>
       </div>
       <div className={styles.advantageWrapper}>

@@ -1,0 +1,29 @@
+@import "styles/global.scss";
+
+.heading {
+  color: $color-secondary;
+  font-size: 24px;
+}
+
+.description {
+  color: $color-gray;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.collapseBtn {
+  cursor: pointer;
+  border: 1px solid $color-secondary;
+  border-radius: 16px;
+  padding: 12px;
+  color: $color-secondary;
+  background: inherit;
+  min-width: 54px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}

@@ -6,6 +6,7 @@ import Icon from "ui/Icon";
 import Marquee from "ui/Marquee";
 import { contentInfo } from "constants/index";
 import AdvantageCourses from "./AdvantageCourses";
+import FAQ from "./FAQ";
 
 const MainInfo = () => {
   console.log(
@@ -36,6 +37,9 @@ const MainInfo = () => {
       </div>
       <div className={styles.advantageCourses}>
         <AdvantageCourses />
+      </div>
+      <div className={styles.faq}>
+        <FAQ />
       </div>
     </div>
   );

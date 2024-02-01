@@ -36,7 +36,7 @@
   .advantageWrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 10px;
+    gap: 10px 10px;
   }
   .advantageWrapper > div:not(:last-child) {
     margin-bottom: 0;
