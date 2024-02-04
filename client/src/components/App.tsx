@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./App.module.scss";
 import Header from "common/Header";
 import MainInfo from "pages/main-info";
+import Footer from "common/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className={styles.container}>
         <MainInfo />
       </div>
+      <Footer />
     </>
   );
 }

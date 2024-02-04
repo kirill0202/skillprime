@@ -1,0 +1,46 @@
+@import "styles/global.scss";
+@import "styles/mixins.scss";
+
+.notFound {
+  @include displayFlexAlignItemsJustifyContentCenter();
+  height: 100vh;
+}
+
+.wrapper > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  @include displayFlexAlignItemsJustifyContentCenter();
+  flex-direction: column;
+}
+
+.output,
+.heading {
+  text-align: center;
+  color: $color-primary;
+}
+
+.heading {
+  font-size: 100px;
+}
+
+.output {
+  font-size: 20px;
+}
+
+.buttonBack {
+  color: $color-primary;
+  cursor: pointer;
+  padding: 10px 5px;
+  background: inherit;
+  border: none;
+  font-size: 25px;
+  border: 1px solid $color-primary;
+  transition: background-color 1s ease-in-out;
+}
+
+.buttonBack:hover {
+  background: $color-primary;
+  color: $color-black;
+}

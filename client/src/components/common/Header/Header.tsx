@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Header.module.scss";
-import Logo from "common/Logo/Logo";
+import Logo from "common/Logo";
 import Burger from "ui/Burger";
 import PopupMenu from "common/PopupMenu";
 import { menu } from "constants/index";

@@ -18,11 +18,19 @@
 }
 
 .list {
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(#818589 50%, $color-primary 50%);
+  background-size: 100% 200%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 550ms ease-in-out;
   cursor: pointer;
 }
 
 .list:hover {
-  color: $color-primary;
+  background-position: 0% 100%;
 }
 
 .customMenu {
