@@ -4,13 +4,12 @@ import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
   const navigate = useNavigate();
-
   const handleRedirectToMainPage = () => navigate("/");
 
   return (
     <div className={styles.notFound}>
       <div className={styles.wrapper}>
-        <h2 className={styles.heading} title="404">
+        <h2 className={styles.heading} title="Error 404">
           Error 404
         </h2>
         <p className={styles.output}>
