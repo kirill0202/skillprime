@@ -5,10 +5,11 @@ import { CSSTransition } from "react-transition-group";
 type CollapseProps = {
   title: string;
   description: string;
+  isCollapseProps?: boolean;
 };
 
-const Collapse = ({ title, description }: CollapseProps) => {
-  const [isCollapse, setIsCollapse] = useState(false);
+const Collapse = ({ title, description, isCollapseProps }: CollapseProps) => {
+  const [isCollapse, setIsCollapse] = useState(isCollapseProps);
 
   const handleCollapse = () => setIsCollapse(!isCollapse);
 

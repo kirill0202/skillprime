@@ -1,12 +1,12 @@
 @import "styles/global.scss";
+@import "styles/mixins.scss";
 
 .advantages {
   margin-top: 50px;
 }
 
 .advantageContent {
-  display: flex;
-  justify-content: space-between;
+  @include displayFlexSpaceBetween();
   flex-wrap: wrap;
   gap: 10px 150px;
   margin-top: 50px;

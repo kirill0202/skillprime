@@ -2,8 +2,12 @@ import React from "react";
 import TagInfo from "ui/TagInfo";
 import styles from "./Сourses.module.scss";
 import CardCourse from "ui/CardCourse";
+import { useNavigate } from "react-router-dom";
 
 const Сourses = () => {
+  const navigate = useNavigate();
+  const handleRedrectCourseFrontend = () => navigate("/development");
+
   return (
     <div className={styles.courses}>
       <div className={styles.courseItem}>
@@ -14,7 +18,11 @@ const Сourses = () => {
           проектах вместе с талантливой командой.
         </p>
       </div>
-      <CardCourse name="Frontend" iconName="development" />
+      <CardCourse
+        name="Frontend"
+        iconName="development"
+        onClick={handleRedrectCourseFrontend}
+      />
       <CardCourse name="HTML/CSS" backgroundColor="#FF6A3A" iconName="layout" />
     </div>
   );

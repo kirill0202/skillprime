@@ -1,0 +1,16 @@
+@import "styles/mixins.scss";
+
+.skills {
+  @include displayFlexSpaceBetween();
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 70px;
+}
+
+.wrapperCollapse {
+  width: 70%;
+}
+
+.wrapperCollapse > div:not(:last-child) {
+  margin-bottom: 30px;
+}

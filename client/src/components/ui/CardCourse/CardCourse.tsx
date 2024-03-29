@@ -8,22 +8,30 @@ type CardCourseProps = {
   name: string;
   iconName: IconNames;
   backgroundColor?: string;
+  onClick?: () => void;
 };
 
-const CardCourse = ({ name, iconName, backgroundColor }: CardCourseProps) => {
+const CardCourse = ({
+  name,
+  iconName,
+  backgroundColor,
+  onClick,
+}: CardCourseProps) => {
   return (
-    <Tilt
-      className={styles.course}
-      style={{ background: backgroundColor }}
-      tiltMaxAngleX={25}
-      tiltMaxAngleY={25}
-      perspective={900}
-      scale={1.1}
-      transitionSpeed={2000}
-    >
-      <Icon name={iconName} wrapperClassName={styles.courseIcon} />
-      <p className={styles.name}>{name}</p>
-    </Tilt>
+    <div onClick={onClick}>
+      <Tilt
+        className={styles.course}
+        style={{ background: backgroundColor }}
+        tiltMaxAngleX={25}
+        tiltMaxAngleY={25}
+        perspective={900}
+        scale={1.1}
+        transitionSpeed={2000}
+      >
+        <Icon name={iconName} wrapperClassName={styles.courseIcon} />
+        <p className={styles.name}>{name}</p>
+      </Tilt>
+    </div>
   );
 };
 
